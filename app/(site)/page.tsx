@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
     <div>
-      <p>Hello Music</p>
+      <p className='text-green-500'>Hello Music App</p>
     </div>
     </>
   )
