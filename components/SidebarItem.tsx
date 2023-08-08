@@ -32,7 +32,8 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
                 transition
                 text-neutral-400
                 py-1`,
-                active && "text-white")}
+                active && "text-white"
+                )}
             >
                 <Icon size={26} />
                 <p className="truncate w-100">{label}</p>
