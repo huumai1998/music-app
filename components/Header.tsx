@@ -38,6 +38,7 @@ const Header: React.FC<HeaderProps> = ({
                     flex
                     items-center
                     justify-between">
+                        {/* backward and forward */}
                         <div 
                             className="
                                 hidden
