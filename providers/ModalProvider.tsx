@@ -1,24 +1,25 @@
-"user client";
+"use client";
 
 import { useEffect, useState } from "react";
 
 const ModalProvider = () => {
-    const [isMounted, setIsMount] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => 
     {
-        setIsMount(true);
+        setIsMounted(true);
     }, [])
 
     if (!isMounted) 
     {
         return null;
     }
-    return 
-    (
-        <>
-
-        </>
+    
+    
+    return(
+        <div>
+            Hallo
+        </div>
     )
 }
 
