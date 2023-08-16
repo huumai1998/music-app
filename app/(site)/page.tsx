@@ -37,7 +37,7 @@ export default async function Home() {
               </div>
             </div>
             <div>
-              <PageContent songs={[]} />
+              <PageContent songs={[songs]}/>
             </div>
     </div>
     </>
