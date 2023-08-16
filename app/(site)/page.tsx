@@ -7,7 +7,7 @@ export const revalidate = 0;
 
 export default async function Home() {
 
-  const songs = getSongs();
+  const songs = await getSongs();
   return (
     <>
     <div
@@ -37,7 +37,7 @@ export default async function Home() {
               </div>
             </div>
             <div>
-              <PageContent songs={[songs]}/>
+              <PageContent songs={songs}/>
             </div>
     </div>
     </>
