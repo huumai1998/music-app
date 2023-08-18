@@ -18,7 +18,7 @@ type UserContextType = {
   export interface Props {
     [propName: string]: any;
   }
-  
+  // get User and Sub details
   export const MyUserContextProvider = (props: Props) => {
     const {
       session,
