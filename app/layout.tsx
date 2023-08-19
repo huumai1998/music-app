@@ -6,7 +6,7 @@ import SupabaseProvider from '@/providers/supaBaseProvider'
 import UserProvider from '@/providers/UserProvider'
 import ModalProvider from '@/providers/ModalProvider'
 import ToasterProvider from '@/providers/ToasterProvider'
-import getSongsByUserId from '@/action/getSongByUserId'
+import getSongs from '@/action/getSongs'
 
 const font = Figtree({ subsets: ['latin'] })
 
@@ -22,7 +22,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const userSongs = await getSongsByUserId();
+  const userSongs = await getSongs();
   return (
     <html lang="en">
       <body className={font.className}>
