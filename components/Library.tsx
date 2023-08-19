@@ -70,6 +70,7 @@ const Library: React.FC<LibraryProps> = ({
                 gap-y-2
                 mt-4
                 px-3">
+                    
                     {songs.map((items) => (
                         <MediaItem onClick={()=> {}} 
                         key={items.id} 
