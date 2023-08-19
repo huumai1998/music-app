@@ -1,5 +1,6 @@
 import getSongsByTitle from "@/action/getSongsByTitle";
 import Header from "@/components/Header";
+import SearchInput from "@/components/SearchInput";
 
 
 export const revalidate = 0;
@@ -27,7 +28,7 @@ const Search = async ({ searchParams }: SearchProps) => {
           <h1 className="text-white text-3xl font-semibold">
             Search
           </h1>
-          {/* <SearchInput /> */}
+          <SearchInput />
         </div>
       </Header>
       {/* <SearchContent songs={songs} /> */}
