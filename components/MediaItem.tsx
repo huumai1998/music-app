@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import { Song } from "@/types/types";
 import useLoadImage from "@/hooks/useLoadingImage";
+import usePlayer from "@/hooks/usePlayer";
 
 interface MediaItemProps {
   data: Song;
