@@ -1,13 +1,13 @@
 import Header from "@/components/Header";
 import ListItem from "@/components/ListItem";
 import PageContent from "./components/PageContent";
-import getSongs from "@/action/getSongs";
+import getSongsOptional from "@/action/getSongsOptional";
 
 export const revalidate = 0;
 
 export default async function Home() {
 
-  const songs = await getSongs();
+  const songs = await getSongsOptional();
   return (
     <>
     <div

@@ -54,15 +54,28 @@ const Library: React.FC<LibraryProps> = ({
                                     Your Library
                                 </p>
                     </div>
-                    <AiOutlinePlus 
-                        onClick={onClick}
-                        size={20}
-                        className="
-                            text-neutral-400
-                            cursor-pointer
-                            hover:text-white
-                            transition
-                            "/>
+                    <div>
+                    {user?.id === "74a98f66-949b-43a2-9658-e77df1221562" ? (
+                        <>
+                        <div>
+                            {/* no code here */}
+                        </div>
+                        </>
+                    ) : (
+                        <>
+                            <AiOutlinePlus 
+                                onClick={onClick}
+                                size={20}
+                                className="
+                                text-neutral-400
+                                cursor-pointer
+                                hover:text-white
+                                transition
+                                "/>
+                        </>
+                    )}
+
+                    </div>
             </div>
             <div className="
                 flex
