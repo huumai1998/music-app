@@ -11,7 +11,7 @@ interface SearchContentProps {
 const SearchContent: React.FC<SearchContentProps> = ({
   songs
 }) => {
-  const onPlay = useOnPlay(songs);
+  // const onPlay = useOnPlay(songs);
 
   if (songs.length === 0) {
     return (
