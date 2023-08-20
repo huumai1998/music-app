@@ -55,15 +55,10 @@ const Library: React.FC<LibraryProps> = ({
                                 </p>
                     </div>
                     <div>
-                    {user?.id === "74a98f66-949b-43a2-9658-e77df1221562" ? (
+                    {user?.id === "fb9902b7-96ff-4824-9c98-808021f66362" ? (
                         <>
                         <div>
-                            {/* no code here */}
-                        </div>
-                        </>
-                    ) : (
-                        <>
-                            <AiOutlinePlus 
+                        <AiOutlinePlus 
                                 onClick={onClick}
                                 size={20}
                                 className="
@@ -72,6 +67,11 @@ const Library: React.FC<LibraryProps> = ({
                                 hover:text-white
                                 transition
                                 "/>
+                        </div>
+                        </>
+                    ) : (
+                        <>
+                        {/* No code here */}
                         </>
                     )}
 
