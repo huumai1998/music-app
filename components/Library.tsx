@@ -68,7 +68,7 @@ const Library: React.FC<LibraryProps> = ({
                                                 </>
                                             ):(
                                                 <>
-                                                <p>Please login to access your songs list</p>
+                                                <p>Please Login</p>
                                                 {/* No code from here */}
                                                 </>
                                             )}
