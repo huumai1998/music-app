@@ -8,6 +8,8 @@ import useUploadModal from "@/hooks/useUploadModal";
 import { Song } from "@/types/types";
 import MediaItem from "./MediaItem";
 import Button from "./Button";
+import LikedContent from "@/app/liked/components/LikedContent";
+import getLikedSongs from "@/action/getLikedSongs";
 
 interface LibraryProps {
     songs: Song[];
@@ -84,7 +86,7 @@ const Library: React.FC<LibraryProps> = ({
                                         <p>
                                             {user ? (
                                                 <>
-                                                Your Songs
+                                                    Your Songs
                                                 </>
                                             ):(
                                                 <>
