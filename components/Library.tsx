@@ -7,6 +7,7 @@ import { useUser } from "@/hooks/useUser";
 import useUploadModal from "@/hooks/useUploadModal";
 import { Song } from "@/types/types";
 import MediaItem from "./MediaItem";
+import Button from "./Button";
 
 interface LibraryProps {
     songs: Song[];
@@ -49,7 +50,13 @@ const Library: React.FC<LibraryProps> = ({
                                     </>
                                 ) : (
                                     <>
-                                        {/* No code from here */}
+                                        <div>
+                                            <Button onClick={() => {}}
+                                                className="bg-white px-5 py-2"
+                                                >
+                                                Please Login
+                                            </Button>
+                                        </div>
                                     </>
                                 )}
                                 <p
@@ -76,7 +83,6 @@ const Library: React.FC<LibraryProps> = ({
                                                 </>
                                             ):(
                                                 <>
-                                                <p>Please Login</p>
                                                 {/* No code from here */}
                                                 </>
                                             )}
