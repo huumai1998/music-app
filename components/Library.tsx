@@ -51,7 +51,7 @@ const Library: React.FC<LibraryProps> = ({
                                 ) : (
                                     <>
                                         <div>
-                                            <Button onClick={() => {}}
+                                            <Button onClick={authModal.onOpen}
                                                 className="bg-white px-5 py-2"
                                                 >
                                                 Please Login
