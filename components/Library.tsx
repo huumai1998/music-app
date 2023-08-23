@@ -51,8 +51,13 @@ const Library: React.FC<LibraryProps> = ({
                                 ) : (
                                     <>
                                         <div>
+                                            <p className="text-neutral-400">
+                                                Listen your music?
+                                            </p>
+                                        </div>
+                                        <div>
                                             <Button onClick={authModal.onOpen}
-                                                className="bg-white px-5 py-2"
+                                                className="bg-white px-0 py-2"
                                                 >
                                                 Please Login
                                             </Button>
