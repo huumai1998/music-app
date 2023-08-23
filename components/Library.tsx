@@ -43,7 +43,15 @@ const Library: React.FC<LibraryProps> = ({
                             items-center
                             gap-x-2
                             ">
-                                <TbPlaylist className="text-neutral-400" size={26}/>
+                                {user ? (
+                                    <>
+                                        <TbPlaylist className="text-neutral-400" size={26}/>  
+                                    </>
+                                ) : (
+                                    <>
+                                        {/* No code from here */}
+                                    </>
+                                )}
                                 <p
                                     className="
                                         text-neutral-400
