@@ -71,7 +71,7 @@ const Library: React.FC<LibraryProps> = ({
                                         text-md
                                         "
                                 >
-                                {user?.id === "fb9902b7-96ff-4824-9c98-808021f66362" ? (
+                                {user ? (
                                     <>
                                     <div>
                                         <p>
@@ -98,7 +98,7 @@ const Library: React.FC<LibraryProps> = ({
                             </p>
                     </div>
                     <div>
-                    {user?.id === "fb9902b7-96ff-4824-9c98-808021f66362" ? (
+                    {user ? (
                         <>
                         <div>
                         <AiOutlinePlus 
